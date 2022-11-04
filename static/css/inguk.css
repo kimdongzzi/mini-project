@@ -1,0 +1,77 @@
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .mypic {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .box {
+            width: 95%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .box > button {
+            width: 100px;
+            height: 50px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            display: block;
+            background-color: transparent;
+            color: black;
+            border-radius: 50px;
+        }
+
+        .Button {
+            width: 300px;
+            margin: auto;
+        }
+
+        .text {
+            margin: auto;
+        }
+
+        .card-img {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            border: 15px;
+            border-radius: 50%
+        }
+
+        .bigbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 100px 100px 100px;
+        }
+
+        .card {
+            margin-right: 100px;
+            text-align: center;
+        }
+
+        .profile1 {
+            color: palevioletred;
+            line-height: 60px;
+            margin-right: 100px;
+        }
+
+        .profile2 {
+            line-height: 60px;
+            margin-right: 100px;
+        }
+
+
+        table {
+            width: 95%;
+            max-width: 1000px;
+            margin: auto;
+        }

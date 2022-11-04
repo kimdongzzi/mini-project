@@ -1,0 +1,51 @@
+
+    html, body {margin: 0; height: 100%;}
+
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .box1 {
+        height: 100%;
+        display: block;
+    }
+
+    .first {
+        height: 33%;
+
+    }
+    .second {
+        height: 33%;
+        display: block;
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 35px;
+        text-align : center;
+        margin: 20px;
+    }
+
+    .title{
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 70px;
+        text-align : center;
+        margin: 20px;
+
+    }
+    .wrapper{
+        margin: 20px;
+    }
+    .name{
+        float: left;
+        width: 100px;
+        font-family: 'Noto Sans KR';
+        font-style: normal;
+        font-weight: 500;
+        color: #FF8383;
+    }
+
+

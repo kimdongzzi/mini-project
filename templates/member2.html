@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/inguk.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <script src="/static/js/guest.js"></script>
+    <title>협업은 처음이라 | 전인국</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            show_guest('mem2');
+        });
+    </script>
+</head>
+
+<body>
+
+
+<div class="mypic">
+    <a href={{url_for('home')}}><h1>협업은 처음이라</h1></a>
+</div>
+
+<div class="bigbox">
+    <div class="card" style="width: 18rem;">
+        <img src="../static/img/member2.png" class="card-img" alt="기철이">
+        <div class="card-body">
+            <div class="text">
+                <h5>전인국</h5>
+                <p>INTP</p>
+                <a href="https://programmerkokkiri.tistory.com" class="btn btn-primary">블로그 주소</a>
+            </div>
+        </div>
+    </div>
+    <div class="profile1">
+        <P>이름</P>
+        <P>MBTI</P>
+        <P>블로그 주소</P>
+        <P>장점</P>
+        <P>협업 스타일</P>
+    </div>
+    <div class="profile2">
+        <P>전인국</P>
+        <P>INTP</P>
+        <P>https://programmerkokkiri.tistory.com</P>
+        <P>문제점을 발견하면 그 즉시 개선하려고 노력한다.</P>
+        <P>조화와 조율을 중시한다.</P>
+    </div>
+</div>
+
+<section class="guest-wrap">
+    <div class="guest-column">
+        <h2 class="comment-title">응원의 말을 남겨주세요!</h2>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="guest-name" placeholder="name">
+            <label for="guest-name">닉네임</label>
+        </div>
+        <div class="form-floating">
+                <textarea class="form-control" placeholder="cheer message" id="guest-comment"
+                          style="height: 200px"></textarea>
+            <label for="guest-comment">응원의 말</label>
+        </div>
+        <button type="button" onclick="save_guest()" class="btn btn-outline-dark">응원하기</button>
+    </div>
+    <div class="guest-column guest_mem" id="mem2">
+        <ul id="guest-list">
+
+        </ul>
+    </div>
+</section>
+
+</body>
+
+</html>

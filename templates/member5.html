@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>협업은 처음이라 | 유상민</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/donghan.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+
+    <script src="/static/js/guest.js"></script>
+    <script>
+        $(document).ready(function () {
+            show_guest('mem5');
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="page-title"><a href={{url_for('home')}}>협업은 처음이라</a></h1>
+    </header>
+    <section class="container">
+        <section class="info-wrap">
+            <div class="info-column info-card">
+                <div class="card">
+                    <img src="../static/img/member5.png" class="card-img" alt="profile image">
+                    <div class="card-body">
+                        <p class="card-text">중재자</p>
+                        <h5 class="card-title">INFP</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="info-column info-content-wrap">
+                <ul class="info-content-column info-content-name">
+                    <li>이름</li>
+                    <li>MBTI</li>
+                    <li>블로그 주소</li>
+                    <li>장점</li>
+                    <li>협업 스타일</li>
+                </ul>
+                <ul class="info-content-column info-content-desc" id="info-list">
+                    <li>유상민</li>
+                    <li>ENFP</li>
+                    <li><a href="https://cococream.tistory.com/1" target="_blank">https://cococream.tistory.com/1</a></li>
+                    <li>부족한 부분이 있으면 즉각 수정하며 바로바로 바꿔나간다</li>
+                    <li>주위에 물어보고 해야 할 일은 노트에 적어 놓고 한다</li>
+                </ul>
+            </div>
+        </section>
+        <section class="guest-wrap">
+            <div class="guest-column">
+                <h2 class="comment-title">응원의 말을 남겨주세요!</h2>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="guest-name" placeholder="name">
+                    <label for="guest-name">닉네임</label>
+                </div>
+                <div class="form-floating">
+                <textarea class="form-control" placeholder="cheer message" id="guest-comment"
+                          style="height: 200px" ></textarea>
+                    <label for="guest-comment">응원의 말</label>
+                </div>
+                <button type="button" onclick="save_guest()" class="btn btn-outline-dark">응원하기</button>
+            </div>
+            <div class="guest-column guest_mem" id="mem5">
+                <ul id="guest-list">
+
+                </ul>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

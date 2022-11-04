@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+    font-family: 'GangwonEdu_OTFBoldA';
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.page-title a{
+	text-decoration: none;
+	color: #181818;
+}
+.index-main {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.index-img {
+    text-align: center;
+    width: 800px;
+    height: 500px;
+}
+
+.member-img {
+    text-align: center;
+    font-family: 'GangwonEdu_OTFBoldA';
+	margin-bottom: 15px;
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top:0;
+    left: 0;
+    display: none;
+}
+.modal_content {
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 74px 0;
+    line-height: 23px;
+    cursor: pointer;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+input#change_guest_comment {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}

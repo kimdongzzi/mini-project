@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'GmarketSansMedium';
+}
+
+/*--main page--*/
+header#header{
+    text-align: center;
+    padding: 60px 0;
+}
+header .page-title{
+    font-size: 2.5rem;
+}
+.page-title a{
+	text-decoration: none;
+	color: #181818;
+}
+section.container{
+	max-width: 1200px;
+	width: 100%;
+	padding: 0px 10px;
+}
+
+
+/*--team page--*/
+
+.container .info-wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 100%;
+	margin-bottom: 100px;
+}
+.info-wrap .info-column:first-child{
+	width: 35%;
+
+}
+.info-wrap .info-column:last-child{
+	width: 60%;
+}
+.info-card div.card{
+	width: 90%;
+	padding: 50px 30px;
+	margin: 0 5% 0 0;
+	border: none;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.card img.card-img{
+	border-radius: 50%;
+	width: 80%;
+	margin: 0 auto 30px;
+}
+.card .card-body{
+	text-align: center;
+}
+.card-body .card-text{
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+.card-body .card-title{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.info-wrap .info-content-wrap{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	width: 100%;
+	padding: 50px 20px;
+}
+.info-content-wrap .info-content-name,
+.info-content-wrap .info-content-desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.info-content-wrap .info-content-name{
+	margin-right: 30px;
+}
+.info-content-wrap .info-content-name li{
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: lightsalmon;
+}

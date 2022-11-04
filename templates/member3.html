@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="kr">
+<head>
+    <meta charset="utf-8">
+    <title>협업은 처음이라 | 정형규</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/static/js/guest.js"></script>
+    <link rel="stylesheet" href="../static/css/hyeongkyu.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <script>
+        $(document).ready(function () {
+            show_guest('mem3');
+        });
+    </script>
+</head>
+<style>
+
+</style>
+<body>
+<div class='box1'>
+    <div class="title"><a href={{url_for('home')}}>협업은 처음이라</a></div>
+    <div class="first">
+        <div style="text-align: center; float: left; width: 50%;height: 100%;background: #FFFFFF;box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);border-radius: 15px;">
+            <img class="card-image" src="/static/img/member3.png" alt="...">
+            <div class="card-body">
+                <p class="card-text"><small class="text-muted">현실주의자</small></p>
+                <p class="card-text">ISTJ</p>
+            </div>
+        </div>
+        <div style="float: left; width: 50%;height: 100%; ">
+            <div class="wrapper">
+                <div class="name">이름</div>
+                <div class="value">정형규</div>
+            </div>
+            <div  class="wrapper">
+                <div class="name">MBTI</div>
+                <div>ISTJ(현실주의자)</div>
+            </div>
+            <div class="wrapper">
+                <div class="name">블로그주소</div>
+                <div><a href="https://velog.io/@jjhk0312">여기 클릭</a></div>
+            </div>
+            <div class="wrapper">
+                <div class="name">장점</div>
+                <div>포기하지않고 인내심있게 할려고 한다는 점 </div>
+            </div>
+            <div  class="wrapper">
+                <div class="name">협업 스타일</div>
+                <div>내 의견보단 남의 의견을 많이 참고한다</div>
+            </div>
+        </div>
+    </div>
+    <section class="guest-wrap">
+        <div class="guest-column">
+            <h2 class="comment-title">응원의 말을 남겨주세요!</h2>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="guest-name" placeholder="name">
+                <label for="guest-name">닉네임</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="cheer message" id="guest-comment"></textarea>
+                <label for="guest-comment">응원의 말</label>
+            </div>
+            <button type="button" onclick="save_guest()" class="btn btn-outline-dark">응원하기</button>
+        </div>
+        <div class="guest-column guest_mem" id="mem3">
+            <ul id="guest-list">
+
+            </ul>
+        </div>
+    </section>
+</div>
+</body>
+
+
+</html>
